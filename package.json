@@ -1,0 +1,22 @@
+{
+  "name": "ddb_counts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "TERRAFORM_OUTPUT=\"$(terraform output --json)\" ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.5.0",
+    "@aws-sdk/client-sts": "^3.5.0",
+    "@aws-sdk/credential-provider-node": "^3.4.1",
+    "@aws-sdk/util-dynamodb": "^3.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.5",
+    "ts-node": "^9.1.1"
+  }
+}
